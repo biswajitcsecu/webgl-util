@@ -1,0 +1,222 @@
+cd '/home/nebex/Projects/NetBeans/3d_point_cloud_ex'
+/usr/bin/make -f Makefile CONF=Debug clean
+"/usr/bin/make" -f nbproject/Makefile-Debug.mk QMAKE= SUBPROJECTS= .clean-conf
+make[1]: Entering directory '/home/nebex/Projects/NetBeans/3d_point_cloud_ex'
+rm -f -r build/Debug
+make[1]: Leaving directory '/home/nebex/Projects/NetBeans/3d_point_cloud_ex'
+
+CLEAN SUCCESSFUL (total time: 57ms)
+cd '/home/nebex/Projects/NetBeans/3d_point_cloud_ex'
+/usr/bin/make -f Makefile CONF=Debug
+"/usr/bin/make" -f nbproject/Makefile-Debug.mk QMAKE= SUBPROJECTS= .build-conf
+make[1]: Entering directory '/home/nebex/Projects/NetBeans/3d_point_cloud_ex'
+"/usr/bin/make"  -f nbproject/Makefile-Debug.mk dist/Debug/GNU-Linux/3d_point_cloud_ex
+make[2]: Entering directory '/home/nebex/Projects/NetBeans/3d_point_cloud_ex'
+mkdir -p build/Debug/GNU-Linux
+rm -f "build/Debug/GNU-Linux/main.o.d"
+g++    -c -g -I/usr/local/oidn/include -MMD -MP -MF "build/Debug/GNU-Linux/main.o.d" -o build/Debug/GNU-Linux/main.o main.cpp
+mkdir -p dist/Debug/GNU-Linux
+g++     -o dist/Debug/GNU-Linux/3d_point_cloud_ex build/Debug/GNU-Linux/main.o -L/usr/local/oidn/lib -lOpenImageDenoise -lcommon -ldlib -lmkldnn -ltbb -ltbbmalloc
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::base_window::show()':
+gui_core_kernel_2.cpp:(.text+0xa23): undefined reference to `XMapRaised'
+gui_core_kernel_2.cpp:(.text+0xa38): undefined reference to `XFlush'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::base_window::hide()':
+gui_core_kernel_2.cpp:(.text+0xbc3): undefined reference to `XUnmapWindow'
+gui_core_kernel_2.cpp:(.text+0xbd8): undefined reference to `XFlush'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::gui_core_kernel_2_globals::event_handler_thread::init_keyboard_mod_masks()':
+gui_core_kernel_2.cpp:(.text+0xee0): undefined reference to `XGetModifierMapping'
+gui_core_kernel_2.cpp:(.text+0xf28): undefined reference to `XkbKeycodeToKeysym'
+gui_core_kernel_2.cpp:(.text+0xf94): undefined reference to `XFreeModifiermap'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::base_window::set_title(std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&)':
+gui_core_kernel_2.cpp:(.text+0x1567): undefined reference to `XwcTextListToTextProperty'
+gui_core_kernel_2.cpp:(.text+0x1582): undefined reference to `XSetWMName'
+gui_core_kernel_2.cpp:(.text+0x158c): undefined reference to `XFree'
+gui_core_kernel_2.cpp:(.text+0x15a1): undefined reference to `XFlush'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::base_window::set_size(int, int)':
+gui_core_kernel_2.cpp:(.text+0x1aa5): undefined reference to `XResizeWindow'
+gui_core_kernel_2.cpp:(.text+0x1ab9): undefined reference to `XFlush'
+gui_core_kernel_2.cpp:(.text+0x1af1): undefined reference to `XAllocSizeHints'
+gui_core_kernel_2.cpp:(.text+0x1b27): undefined reference to `XSetNormalHints'
+gui_core_kernel_2.cpp:(.text+0x1b2f): undefined reference to `XFree'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::base_window::set_pos(long, long)':
+gui_core_kernel_2.cpp:(.text+0x1cb9): undefined reference to `XMoveWindow'
+gui_core_kernel_2.cpp:(.text+0x1cce): undefined reference to `XFlush'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::base_window::get_pos(long&, long&)':
+gui_core_kernel_2.cpp:(.text+0x1e9f): undefined reference to `XTranslateCoordinates'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::base_window::get_display_size(unsigned long&, unsigned long&) const':
+gui_core_kernel_2.cpp:(.text+0x215d): undefined reference to `XScreenNumberOfScreen'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::base_window::invalidate_rectangle(dlib::rectangle const&)':
+gui_core_kernel_2.cpp:(.text+0x23a5): undefined reference to `XClearArea'
+gui_core_kernel_2.cpp:(.text+0x23bc): undefined reference to `XFlush'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::base_window::set_im_pos(long, long)':
+gui_core_kernel_2.cpp:(.text+0x2567): undefined reference to `XVaCreateNestedList'
+gui_core_kernel_2.cpp:(.text+0x2586): undefined reference to `XSetICValues'
+gui_core_kernel_2.cpp:(.text+0x258e): undefined reference to `XFree'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::base_window::close_window()':
+gui_core_kernel_2.cpp:(.text+0x2792): undefined reference to `XDestroyWindow'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::base_window::~base_window()':
+gui_core_kernel_2.cpp:(.text+0x28ef): undefined reference to `XDestroyIC'
+gui_core_kernel_2.cpp:(.text+0x290f): undefined reference to `XFreeFontSet'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::base_window::~base_window()':
+gui_core_kernel_2.cpp:(.text+0x29cd): undefined reference to `XDestroyIC'
+gui_core_kernel_2.cpp:(.text+0x29ed): undefined reference to `XFreeFontSet'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::gui_core_kernel_2_globals::event_handler_thread::event_handler()':
+gui_core_kernel_2.cpp:(.text+0x2ba8): undefined reference to `XPending'
+gui_core_kernel_2.cpp:(.text+0x2cb4): undefined reference to `XNextEvent'
+gui_core_kernel_2.cpp:(.text+0x2cbe): undefined reference to `XFilterEvent'
+gui_core_kernel_2.cpp:(.text+0x2d92): undefined reference to `XInternAtom'
+gui_core_kernel_2.cpp:(.text+0x2e1a): undefined reference to `XSendEvent'
+gui_core_kernel_2.cpp:(.text+0x2e26): undefined reference to `XFlush'
+gui_core_kernel_2.cpp:(.text+0x3038): undefined reference to `XMoveWindow'
+gui_core_kernel_2.cpp:(.text+0x314f): undefined reference to `XCheckIfEvent'
+gui_core_kernel_2.cpp:(.text+0x34fc): undefined reference to `XwcLookupString'
+gui_core_kernel_2.cpp:(.text+0x3b33): undefined reference to `XwcLookupString'
+gui_core_kernel_2.cpp:(.text+0x3cdc): undefined reference to `XLookupString'
+gui_core_kernel_2.cpp:(.text+0x3fba): undefined reference to `XResizeWindow'
+gui_core_kernel_2.cpp:(.text+0x40af): undefined reference to `XInitImage'
+gui_core_kernel_2.cpp:(.text+0x40c6): undefined reference to `XCreateGC'
+gui_core_kernel_2.cpp:(.text+0x4104): undefined reference to `XPutImage'
+gui_core_kernel_2.cpp:(.text+0x4117): undefined reference to `XFreeGC'
+gui_core_kernel_2.cpp:(.text+0x4b10): undefined reference to `XAllocSizeHints'
+gui_core_kernel_2.cpp:(.text+0x4b48): undefined reference to `XSetNormalHints'
+gui_core_kernel_2.cpp:(.text+0x4b50): undefined reference to `XFree'
+gui_core_kernel_2.cpp:(.text+0x4d4e): undefined reference to `XDestroyWindow'
+gui_core_kernel_2.cpp:(.text+0x4db1): undefined reference to `XChangeProperty'
+gui_core_kernel_2.cpp:(.text+0x4e24): undefined reference to `XChangeProperty'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::put_on_clipboard(std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > const&)':
+gui_core_kernel_2.cpp:(.text+0x520f): undefined reference to `XSetSelectionOwner'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::get_from_clipboard(std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&)':
+gui_core_kernel_2.cpp:(.text+0x55bf): undefined reference to `XInternAtom'
+gui_core_kernel_2.cpp:(.text+0x55d7): undefined reference to `XGetSelectionOwner'
+gui_core_kernel_2.cpp:(.text+0x56ac): undefined reference to `XConvertSelection'
+gui_core_kernel_2.cpp:(.text+0x56c8): undefined reference to `XPeekIfEvent'
+gui_core_kernel_2.cpp:(.text+0x5712): undefined reference to `XGetWindowProperty'
+gui_core_kernel_2.cpp:(.text+0x5727): undefined reference to `XFree'
+gui_core_kernel_2.cpp:(.text+0x5795): undefined reference to `XGetWindowProperty'
+gui_core_kernel_2.cpp:(.text+0x57c6): undefined reference to `XwcFreeStringList'
+gui_core_kernel_2.cpp:(.text+0x5907): undefined reference to `XwcTextPropertyToTextList'
+gui_core_kernel_2.cpp:(.text+0x5954): undefined reference to `XFree'
+gui_core_kernel_2.cpp:(.text+0x5965): undefined reference to `XwcFreeStringList'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::base_window::base_window(bool, bool)':
+gui_core_kernel_2.cpp:(.text+0x69dc): undefined reference to `XCreateWindow'
+gui_core_kernel_2.cpp:(.text+0x6a5f): undefined reference to `XCreateFontSet'
+gui_core_kernel_2.cpp:(.text+0x6aa1): undefined reference to `XVaCreateNestedList'
+gui_core_kernel_2.cpp:(.text+0x6ae0): undefined reference to `XCreateIC'
+gui_core_kernel_2.cpp:(.text+0x6aee): undefined reference to `XFree'
+gui_core_kernel_2.cpp:(.text+0x6afa): undefined reference to `XFreeStringList'
+gui_core_kernel_2.cpp:(.text+0x6bb1): undefined reference to `XGetICValues'
+gui_core_kernel_2.cpp:(.text+0x6bd6): undefined reference to `XSelectInput'
+gui_core_kernel_2.cpp:(.text+0x6bf9): undefined reference to `XSetWMProtocols'
+gui_core_kernel_2.cpp:(.text+0x6c10): undefined reference to `XAllocSizeHints'
+gui_core_kernel_2.cpp:(.text+0x6c49): undefined reference to `XSetNormalHints'
+gui_core_kernel_2.cpp:(.text+0x6c51): undefined reference to `XFree'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::gui_core_kernel_2_globals::event_handler_thread::thread()':
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x27): undefined reference to `XInitThreads'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x1c1): undefined reference to `XOpenDisplay'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x295): undefined reference to `XInternAtom'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x374): undefined reference to `XCreateWindow'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x5d2): undefined reference to `XOpenDisplay'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x988): undefined reference to `XPending'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0xa94): undefined reference to `XNextEvent'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0xa9e): undefined reference to `XFilterEvent'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0xf6f): undefined reference to `XInternAtom'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0xff7): undefined reference to `XSendEvent'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x1003): undefined reference to `XFlush'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x1072): undefined reference to `XMoveWindow'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x1187): undefined reference to `XCheckIfEvent'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x13cb): undefined reference to `XInitImage'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x13e2): undefined reference to `XCreateGC'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x1420): undefined reference to `XPutImage'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x1433): undefined reference to `XFreeGC'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x15df): undefined reference to `XwcLookupString'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x19d3): undefined reference to `XResizeWindow'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x225a): undefined reference to `XAllocSizeHints'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x2292): undefined reference to `XSetNormalHints'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x229a): undefined reference to `XFree'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x2499): undefined reference to `XDestroyWindow'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x2932): undefined reference to `XwcLookupString'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x2980): undefined reference to `XLookupString'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x2a10): undefined reference to `XChangeProperty'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv[_ZN4dlib25gui_core_kernel_2_globals20event_handler_thread6threadEv]+0x2a83): undefined reference to `XChangeProperty'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::gui_core_kernel_2_globals::event_handler_thread::~event_handler_thread()':
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD2Ev[_ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD5Ev]+0x7b): undefined reference to `XFlush'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD2Ev[_ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD5Ev]+0x8a): undefined reference to `XPutBackEvent'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD2Ev[_ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD5Ev]+0x96): undefined reference to `XFlush'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD2Ev[_ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD5Ev]+0xb0): undefined reference to `XSendEvent'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD2Ev[_ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD5Ev]+0xbc): undefined reference to `XFlush'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD2Ev[_ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD5Ev]+0xd5): undefined reference to `XCloseIM'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD2Ev[_ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD5Ev]+0xe1): undefined reference to `XCloseDisplay'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `dlib::gui_core_kernel_2_globals::event_handler_thread::~event_handler_thread()':
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD0Ev[_ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD5Ev]+0x7b): undefined reference to `XFlush'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD0Ev[_ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD5Ev]+0x8a): undefined reference to `XPutBackEvent'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD0Ev[_ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD5Ev]+0x96): undefined reference to `XFlush'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD0Ev[_ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD5Ev]+0xb0): undefined reference to `XSendEvent'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD0Ev[_ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD5Ev]+0xbc): undefined reference to `XFlush'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD0Ev[_ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD5Ev]+0xd5): undefined reference to `XCloseIM'
+gui_core_kernel_2.cpp:(.text._ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD0Ev[_ZN4dlib25gui_core_kernel_2_globals20event_handler_threadD5Ev]+0xe1): undefined reference to `XCloseDisplay'
+/usr/local/oidn/lib/libdlib.a(gui_core_kernel_2.cpp.o): In function `std::_Sp_counted_ptr<dlib::gui_core_kernel_2_globals::event_handler_thread*, (__gnu_cxx::_Lock_policy)2>::_M_dispose()':
+gui_core_kernel_2.cpp:(.text._ZNSt15_Sp_counted_ptrIPN4dlib25gui_core_kernel_2_globals20event_handler_threadELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv[_ZNSt15_Sp_counted_ptrIPN4dlib25gui_core_kernel_2_globals20event_handler_threadELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv]+0x9f): undefined reference to `XFlush'
+gui_core_kernel_2.cpp:(.text._ZNSt15_Sp_counted_ptrIPN4dlib25gui_core_kernel_2_globals20event_handler_threadELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv[_ZNSt15_Sp_counted_ptrIPN4dlib25gui_core_kernel_2_globals20event_handler_threadELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv]+0xae): undefined reference to `XPutBackEvent'
+gui_core_kernel_2.cpp:(.text._ZNSt15_Sp_counted_ptrIPN4dlib25gui_core_kernel_2_globals20event_handler_threadELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv[_ZNSt15_Sp_counted_ptrIPN4dlib25gui_core_kernel_2_globals20event_handler_threadELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv]+0xba): undefined reference to `XFlush'
+gui_core_kernel_2.cpp:(.text._ZNSt15_Sp_counted_ptrIPN4dlib25gui_core_kernel_2_globals20event_handler_threadELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv[_ZNSt15_Sp_counted_ptrIPN4dlib25gui_core_kernel_2_globals20event_handler_threadELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv]+0xd4): undefined reference to `XSendEvent'
+gui_core_kernel_2.cpp:(.text._ZNSt15_Sp_counted_ptrIPN4dlib25gui_core_kernel_2_globals20event_handler_threadELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv[_ZNSt15_Sp_counted_ptrIPN4dlib25gui_core_kernel_2_globals20event_handler_threadELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv]+0xe0): undefined reference to `XFlush'
+gui_core_kernel_2.cpp:(.text._ZNSt15_Sp_counted_ptrIPN4dlib25gui_core_kernel_2_globals20event_handler_threadELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv[_ZNSt15_Sp_counted_ptrIPN4dlib25gui_core_kernel_2_globals20event_handler_threadELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv]+0xf9): undefined reference to `XCloseIM'
+gui_core_kernel_2.cpp:(.text._ZNSt15_Sp_counted_ptrIPN4dlib25gui_core_kernel_2_globals20event_handler_threadELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv[_ZNSt15_Sp_counted_ptrIPN4dlib25gui_core_kernel_2_globals20event_handler_threadELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv]+0x105): undefined reference to `XCloseDisplay'
+/usr/local/oidn/lib/libdlib.a(fonts.cpp.o): In function `nativefont::font_renderer::font_renderer::~font_renderer()':
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_rendererD2Ev[_ZN10nativefont13font_renderer13font_rendererD5Ev]+0x36): undefined reference to `XFreeGC'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_rendererD2Ev[_ZN10nativefont13font_renderer13font_rendererD5Ev]+0x45): undefined reference to `XFreeFontSet'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_rendererD2Ev[_ZN10nativefont13font_renderer13font_rendererD5Ev]+0x54): undefined reference to `XFreePixmap'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_rendererD2Ev[_ZN10nativefont13font_renderer13font_rendererD5Ev]+0x5e): undefined reference to `XCloseDisplay'
+/usr/local/oidn/lib/libdlib.a(fonts.cpp.o): In function `nativefont::native_font::~native_font()':
+fonts.cpp:(.text._ZN10nativefont11native_fontD2Ev[_ZN10nativefont11native_fontD5Ev]+0x73): undefined reference to `XFreeGC'
+fonts.cpp:(.text._ZN10nativefont11native_fontD2Ev[_ZN10nativefont11native_fontD5Ev]+0x80): undefined reference to `XFreeFontSet'
+fonts.cpp:(.text._ZN10nativefont11native_fontD2Ev[_ZN10nativefont11native_fontD5Ev]+0x8d): undefined reference to `XFreePixmap'
+fonts.cpp:(.text._ZN10nativefont11native_fontD2Ev[_ZN10nativefont11native_fontD5Ev]+0x96): undefined reference to `XCloseDisplay'
+/usr/local/oidn/lib/libdlib.a(fonts.cpp.o): In function `nativefont::native_font::~native_font()':
+fonts.cpp:(.text._ZN10nativefont11native_fontD0Ev[_ZN10nativefont11native_fontD5Ev]+0x73): undefined reference to `XFreeGC'
+fonts.cpp:(.text._ZN10nativefont11native_fontD0Ev[_ZN10nativefont11native_fontD5Ev]+0x80): undefined reference to `XFreeFontSet'
+fonts.cpp:(.text._ZN10nativefont11native_fontD0Ev[_ZN10nativefont11native_fontD5Ev]+0x8d): undefined reference to `XFreePixmap'
+fonts.cpp:(.text._ZN10nativefont11native_fontD0Ev[_ZN10nativefont11native_fontD5Ev]+0x96): undefined reference to `XCloseDisplay'
+/usr/local/oidn/lib/libdlib.a(fonts.cpp.o): In function `std::_Sp_counted_ptr<nativefont::native_font*, (__gnu_cxx::_Lock_policy)2>::_M_dispose()':
+fonts.cpp:(.text._ZNSt15_Sp_counted_ptrIPN10nativefont11native_fontELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv[_ZNSt15_Sp_counted_ptrIPN10nativefont11native_fontELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv]+0x9c): undefined reference to `XFreeGC'
+fonts.cpp:(.text._ZNSt15_Sp_counted_ptrIPN10nativefont11native_fontELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv[_ZNSt15_Sp_counted_ptrIPN10nativefont11native_fontELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv]+0xa9): undefined reference to `XFreeFontSet'
+fonts.cpp:(.text._ZNSt15_Sp_counted_ptrIPN10nativefont11native_fontELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv[_ZNSt15_Sp_counted_ptrIPN10nativefont11native_fontELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv]+0xb6): undefined reference to `XFreePixmap'
+fonts.cpp:(.text._ZNSt15_Sp_counted_ptrIPN10nativefont11native_fontELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv[_ZNSt15_Sp_counted_ptrIPN10nativefont11native_fontELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv]+0xbf): undefined reference to `XCloseDisplay'
+/usr/local/oidn/lib/libdlib.a(fonts.cpp.o): In function `void nativefont::font_renderer::font_renderer::vals_internal::create<unsigned int>(unsigned int*, int, bool, bool, bool, nativefont::font_renderer::font_renderer::rgb_type, nativefont::font_renderer::font_renderer::rgb_type)':
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0xf3): undefined reference to `XwcTextExtents'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x11d): undefined reference to `XFreeGC'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x12a): undefined reference to `XFreePixmap'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x14c): undefined reference to `XDefaultDepth'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x176): undefined reference to `XCreatePixmap'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x18a): undefined reference to `XCreateGC'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x1df): undefined reference to `XAllocColor'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x1f4): undefined reference to `XSetForeground'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x204): undefined reference to `XSetBackground'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x226): undefined reference to `XFillRectangle'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x275): undefined reference to `XAllocColor'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x287): undefined reference to `XSetForeground'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x2a9): undefined reference to `XwcDrawString'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x2d8): undefined reference to `XGetImage'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x32e): undefined reference to `XFreeFontSet'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x349): undefined reference to `XCreateFontSet'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x35e): undefined reference to `XExtentsOfFontSet'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x37e): undefined reference to `XFreeStringList'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x3db): undefined reference to `XOpenDisplay'
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_[_ZN10nativefont13font_renderer13font_renderer13vals_internal6createIjEEvPT_ibbbNS1_8rgb_typeES6_]+0x40f): undefined reference to `XOpenDisplay'
+/usr/local/oidn/lib/libdlib.a(fonts.cpp.o): In function `void nativefont::font_renderer::font_renderer::render<unsigned int>(unsigned int*, int, bool, bool, bool, nativefont::font_renderer::font_renderer::rgb_type, nativefont::font_renderer::font_renderer::rgb_type)':
+fonts.cpp:(.text._ZN10nativefont13font_renderer13font_renderer6renderIjEEvPT_ibbbNS1_8rgb_typeES5_[_ZN10nativefont13font_renderer13font_renderer6renderIjEEvPT_ibbbNS1_8rgb_typeES5_]+0x28a): undefined reference to `XQueryColor'
+/usr/local/oidn/lib/libdlib.a(threads_kernel_2.cpp.o): In function `dlib::threads_kernel_shared_helpers::thread_starter(void*)':
+threads_kernel_2.cpp:(.text+0x1b): undefined reference to `pthread_detach'
+/usr/local/oidn/lib/libdlib.a(threads_kernel_2.cpp.o): In function `dlib::threads_kernel_shared_helpers::spawn_thread(void (*)(void*), void*)':
+threads_kernel_2.cpp:(.text+0x72): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+nbproject/Makefile-Debug.mk:62: recipe for target 'dist/Debug/GNU-Linux/3d_point_cloud_ex' failed
+make[2]: *** [dist/Debug/GNU-Linux/3d_point_cloud_ex] Error 1
+make[2]: Leaving directory '/home/nebex/Projects/NetBeans/3d_point_cloud_ex'
+nbproject/Makefile-Debug.mk:59: recipe for target '.build-conf' failed
+make[1]: *** [.build-conf] Error 2
+make[1]: Leaving directory '/home/nebex/Projects/NetBeans/3d_point_cloud_ex'
+nbproject/Makefile-impl.mk:39: recipe for target '.build-impl' failed
+make: *** [.build-impl] Error 2
+
+BUILD FAILED (exit value 2, total time: 8s)
